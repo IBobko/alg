@@ -1,22 +1,24 @@
 #include <iostream>
 #include <vector>
 
-int BOOL_SIZE = 5;
+int STR_SIZE = 5;
 
-struct State {
-    bool match;
+class State {
+    char _match;
+public:
+    explicit State(char match) : _match(match) {}
 
-    bool isMatch(bool value) {
-        return value == match;
+    bool isMatch(char value) {
+        return value == _match;
     }
 
     std::vector<State *> possibleNext;
 };
 
 
-bool traverse(State *s, const bool param[], int index) {
+bool traverse(State *s, const char param[], int index) {
     if (s->isMatch(param[index])) {
-        if (index + 1 == BOOL_SIZE) {
+        if (index + 1 == STR_SIZE) {
             std::cout << "The end." << std::endl;
             return true;
         }
@@ -32,36 +34,24 @@ bool traverse(State *s, const bool param[], int index) {
 }
 
 int main() {
-    State T;
-    T.match = true;
+    State T('a');
     T.possibleNext.push_back(&T);
-
-    State F;
-    F.match = false;
+    State F('b');
     F.possibleNext.push_back(&F);
 
-    bool *inputsTrue = new bool[BOOL_SIZE];
-    inputsTrue[0] = true;
-    inputsTrue[1] = true;
-    inputsTrue[2] = true;
-    inputsTrue[3] = true;
-    inputsTrue[4] = true;
+    auto * initial = new State('\0');
+    initial->possibleNext.push_back(&T);
+    initial->possibleNext.push_back(&F);
 
-    bool *inputsFalse = new bool[BOOL_SIZE];
-    inputsFalse[0] = false;
-    inputsFalse[1] = false;
-    inputsFalse[2] = false;
-    inputsFalse[3] = false;
-    inputsFalse[4] = false;
+    char const *inputsTrue = "\0aaaaa";
+    char const *inputsFalse = "\0bbbbb";
 
-    if (traverse(&T, inputsTrue, 0)) {
+    if (traverse(initial, inputsTrue, 0)) {
         std::cout << "Result: true+" << std::endl;
     }
 
-    if (traverse(&F, inputsFalse, 0)) {
+    if (traverse(initial, inputsFalse, 0)) {
         std::cout << "Result: false+" << std::endl;
     }
-
-
     return 0;
 }
