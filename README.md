@@ -1,5 +1,5 @@
 # alg
 
 Here is an implementation of regex for:
-* true+
-* false+
+* a+
+* b+
