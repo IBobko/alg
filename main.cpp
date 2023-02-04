@@ -15,11 +15,11 @@ struct State {
 
 
 bool traverse(State *s, const bool param[], int index) {
-    if (index == BOOL_SIZE) {
-        std::cout << "The end." << std::endl;
-        return true;
-    }
     if (s->isMatch(param[index])) {
+        if (index + 1 == BOOL_SIZE) {
+            std::cout << "The end." << std::endl;
+            return true;
+        }
         for (auto &i: s->possibleNext) {
             if (traverse(i, param, index + 1)) {
                 return true;
