@@ -1,7 +1,5 @@
 # alg
 
-Here is implementation of regex
-
-true+
-false+
-
+Here is an implementation of regex for:
+* true+
+* false+
