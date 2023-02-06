@@ -1,57 +1,33 @@
 #include <iostream>
 #include <vector>
 
-int STR_SIZE = 5;
+#include "ShuntingYardAlgorithm.h"
 
-class State {
-    char _match;
-public:
-    explicit State(char match) : _match(match) {}
-
-    bool isMatch(char value) {
-        return value == _match;
-    }
-
-    std::vector<State *> possibleNext;
-};
-
-
-bool traverse(State *s, const char param[], int index) {
-    if (s->isMatch(param[index])) {
-        if (index + 1 == STR_SIZE) {
-            std::cout << "The end." << std::endl;
-            return true;
-        }
-        for (auto &i: s->possibleNext) {
-            if (traverse(i, param, index + 1)) {
-                return true;
-            }
-        }
-        return false;
-    } else {
-        return false;
-    }
-}
-
+#include "Solution224.h"
 int main() {
-    State T('a');
-    T.possibleNext.push_back(&T);
-    State F('b');
-    F.possibleNext.push_back(&F);
+//    std::string s;
+//    s.push_back('1');
+//    s.push_back('2');
+//    s.push_back('a');
+//    s.push_back('%');
+//    std::cout << s << std::endl;
 
-    auto * initial = new State('\0');
-    initial->possibleNext.push_back(&T);
-    initial->possibleNext.push_back(&F);
+    Solution224 * solution224 = new Solution224();
+    //int result = solution224->calculate("(1+(4+5+2)-3)+(6+8)");
+//    int result1 = solution224->calculate("(1+(2+3))");
+//    int result2 = solution224->calculate("2*2+2");
+//    int result3 = solution224->calculate("2+2*2");
+//    int result4 = solution224->calculate("2*(2+2)");
+    int result5 = solution224->calculate(" 2-1 + 2 ");
+//    std::cout << result4 << std::endl;
+//    std::cout << result3 << std::endl;
+//    std::cout << result2 << std::endl;
+//    std::cout << result1 << std::endl;
+    std::cout << result5 << std::endl;
 
-    char const *inputsTrue = "\0aaaaa";
-    char const *inputsFalse = "\0bbbbb";
 
-    if (traverse(initial, inputsTrue, 0)) {
-        std::cout << "Result: true+" << std::endl;
-    }
+//    ShuntingYardAlgorithm *s = new ShuntingYardAlgorithm();
+//    s->start("");
 
-    if (traverse(initial, inputsFalse, 0)) {
-        std::cout << "Result: false+" << std::endl;
-    }
     return 0;
 }
