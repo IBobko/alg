@@ -1,0 +1,15 @@
+# Exclude PyCharm files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Exclude Python virtual environment
+venv/
+myenv/
+
+# Exclude HDF5 files
+*.h5
+
+# Exclude specific session files
+*.session

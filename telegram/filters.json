@@ -1,0 +1,414 @@
+{
+  "DialogFilterDefault": {},
+  "DialogFilter": [
+    {
+      "id": 3,
+      "title": "Personal",
+      "pinned_peers": [],
+      "include_peers": [],
+      "exclude_peers": [],
+      "contacts": true,
+      "non_contacts": true,
+      "groups": false,
+      "broadcasts": false,
+      "bots": false,
+      "exclude_muted": false,
+      "exclude_read": false,
+      "exclude_archived": false,
+      "emoticon": ""
+    },
+    {
+      "id": 7,
+      "title": "Новые",
+      "pinned_peers": [],
+      "include_peers": [],
+      "exclude_peers": [],
+      "contacts": true,
+      "non_contacts": true,
+      "groups": true,
+      "broadcasts": true,
+      "bots": true,
+      "exclude_muted": false,
+      "exclude_read": true,
+      "exclude_archived": false,
+      "emoticon": null
+    },
+    {
+      "id": 4,
+      "title": "18+2",
+      "pinned_peers": [],
+      "include_peers": [
+        {
+          "channel_id": 1494411702,
+          "access_hash": "8373113246796380356"
+        },
+        {
+          "channel_id": 1476529908,
+          "access_hash": "3383085003114940245"
+        },
+        {
+          "channel_id": 1470126963,
+          "access_hash": "-1336815822113753009"
+        },
+        {
+          "channel_id": 1447463809,
+          "access_hash": "7216152419161860979"
+        },
+        {
+          "channel_id": 1302436502,
+          "access_hash": "3931536944175656419"
+        },
+        {
+          "channel_id": 1300417728,
+          "access_hash": "8644206341294657276"
+        },
+        {
+          "channel_id": 1188516167,
+          "access_hash": "-8894325791288147244"
+        }
+      ],
+      "exclude_peers": [],
+      "contacts": false,
+      "non_contacts": false,
+      "groups": false,
+      "broadcasts": false,
+      "bots": false,
+      "exclude_muted": false,
+      "exclude_read": false,
+      "exclude_archived": false,
+      "emoticon": ""
+    },
+    {
+      "id": 2,
+      "title": "Unread",
+      "pinned_peers": [],
+      "include_peers": [],
+      "exclude_peers": [],
+      "contacts": true,
+      "non_contacts": true,
+      "groups": true,
+      "broadcasts": true,
+      "bots": true,
+      "exclude_muted": false,
+      "exclude_read": true,
+      "exclude_archived": false,
+      "emoticon": ""
+    },
+    {
+      "id": 6,
+      "title": "News",
+      "pinned_peers": [],
+      "include_peers": [
+        {
+          "channel_id": 1808014945,
+          "access_hash": "1347114674188588779"
+        },
+        {
+          "channel_id": 1210620853,
+          "access_hash": "-3024280688735488035"
+        },
+        {
+          "channel_id": 1488156064,
+          "access_hash": "2379514394820271949"
+        },
+        {
+          "channel_id": 1190116618,
+          "access_hash": "-3083782324912330990"
+        },
+        {
+          "channel_id": 1747110091,
+          "access_hash": "-2181261468577105906"
+        },
+        {
+          "channel_id": 1378437077,
+          "access_hash": "-8894614465835723598"
+        },
+        {
+          "channel_id": 1404715165,
+          "access_hash": "-8429894606790261472"
+        },
+        {
+          "channel_id": 1140809683,
+          "access_hash": "-4641314785989974439"
+        },
+        {
+          "channel_id": 1227111274,
+          "access_hash": "6760904120313795885"
+        },
+        {
+          "channel_id": 1157742664,
+          "access_hash": "-2254815174178835896"
+        },
+        {
+          "channel_id": 1036240821,
+          "access_hash": "2398076407506896205"
+        },
+        {
+          "channel_id": 1379753191,
+          "access_hash": "3720443988603913665"
+        },
+        {
+          "channel_id": 1414941500,
+          "access_hash": "5680819970709227790"
+        },
+        {
+          "channel_id": 1139141359,
+          "access_hash": "-1943781955836681144"
+        },
+        {
+          "channel_id": 1462978404,
+          "access_hash": "-3489349803262729560"
+        },
+        {
+          "channel_id": 1223219553,
+          "access_hash": "7377574945311252487"
+        },
+        {
+          "channel_id": 1003921752,
+          "access_hash": "-5116570387305901054"
+        },
+        {
+          "user_id": 6067132126,
+          "access_hash": "2091192919271298879"
+        }
+      ],
+      "exclude_peers": [],
+      "contacts": false,
+      "non_contacts": false,
+      "groups": false,
+      "broadcasts": false,
+      "bots": false,
+      "exclude_muted": false,
+      "exclude_read": false,
+      "exclude_archived": false,
+      "emoticon": ""
+    },
+    {
+      "id": 8,
+      "title": "18+",
+      "pinned_peers": [],
+      "include_peers": [
+        {
+          "channel_id": 1605340281,
+          "access_hash": "3732000473455088991"
+        },
+        {
+          "channel_id": 1235272807,
+          "access_hash": "4523158663146929007"
+        },
+        {
+          "channel_id": 1512006195,
+          "access_hash": "-4109811059195550476"
+        },
+        {
+          "channel_id": 1173379446,
+          "access_hash": "-1104696163096981112"
+        },
+        {
+          "channel_id": 1481743976,
+          "access_hash": "-5133848295648069491"
+        },
+        {
+          "channel_id": 1104805452,
+          "access_hash": "-6671872628200368558"
+        },
+        {
+          "channel_id": 1154613308,
+          "access_hash": "1587492082087768141"
+        },
+        {
+          "channel_id": 1193777628,
+          "access_hash": "-2744101956892730146"
+        },
+        {
+          "channel_id": 1248589367,
+          "access_hash": "-4537136203746529348"
+        },
+        {
+          "channel_id": 1456873435,
+          "access_hash": "1324601464206593327"
+        },
+        {
+          "channel_id": 1217173303,
+          "access_hash": "8521084112891026394"
+        },
+        {
+          "channel_id": 1183713603,
+          "access_hash": "-1655014894856024956"
+        },
+        {
+          "channel_id": 1661686117,
+          "access_hash": "8959313719550141524"
+        },
+        {
+          "channel_id": 1407828564,
+          "access_hash": "-3054322452214816687"
+        },
+        {
+          "channel_id": 1801743607,
+          "access_hash": "4342400694998827990"
+        },
+        {
+          "channel_id": 1810291464,
+          "access_hash": "-8836754973852135967"
+        },
+        {
+          "channel_id": 1814966676,
+          "access_hash": "-49583187521090922"
+        },
+        {
+          "channel_id": 1542423780,
+          "access_hash": "917549875681414388"
+        },
+        {
+          "channel_id": 1529582936,
+          "access_hash": "-6491530182995859622"
+        },
+        {
+          "channel_id": 1196685830,
+          "access_hash": "-9127950658437759450"
+        },
+        {
+          "channel_id": 1420050397,
+          "access_hash": "-2899186342860074868"
+        },
+        {
+          "channel_id": 1454298350,
+          "access_hash": "-6790525264546774218"
+        },
+        {
+          "channel_id": 1175844847,
+          "access_hash": "7466767589536345499"
+        },
+        {
+          "channel_id": 1622458016,
+          "access_hash": "-6581151812882083483"
+        },
+        {
+          "channel_id": 1622559197,
+          "access_hash": "8329288104649373527"
+        },
+        {
+          "channel_id": 1521778947,
+          "access_hash": "4136374816415413063"
+        },
+        {
+          "channel_id": 1638376387,
+          "access_hash": "-8232947591280695212"
+        },
+        {
+          "channel_id": 1582149579,
+          "access_hash": "-7156086707659859185"
+        },
+        {
+          "channel_id": 1654780581,
+          "access_hash": "1149325027784000353"
+        },
+        {
+          "channel_id": 1797836797,
+          "access_hash": "348424501959730806"
+        },
+        {
+          "channel_id": 1737627571,
+          "access_hash": "-5312772795354905083"
+        },
+        {
+          "channel_id": 1341680169,
+          "access_hash": "-163509252058958379"
+        },
+        {
+          "channel_id": 1185928747,
+          "access_hash": "-6688160604873230784"
+        },
+        {
+          "channel_id": 1470126963,
+          "access_hash": "-1336815822113753009"
+        },
+        {
+          "channel_id": 1727248245,
+          "access_hash": "7353143487144686727"
+        },
+        {
+          "channel_id": 1582794312,
+          "access_hash": "-6609841297346961412"
+        },
+        {
+          "channel_id": 1354188646,
+          "access_hash": "-48416261928297792"
+        }
+      ],
+      "exclude_peers": [],
+      "contacts": false,
+      "non_contacts": false,
+      "groups": false,
+      "broadcasts": false,
+      "bots": false,
+      "exclude_muted": false,
+      "exclude_read": false,
+      "exclude_archived": false,
+      "emoticon": ""
+    },
+    {
+      "id": 9,
+      "title": "Развлечения",
+      "pinned_peers": [],
+      "include_peers": [
+        {
+          "channel_id": 1407781851,
+          "access_hash": "5310830411440249162"
+        },
+        {
+          "channel_id": 1614457630,
+          "access_hash": "-5967445618100725581"
+        }
+      ],
+      "exclude_peers": [],
+      "contacts": false,
+      "non_contacts": false,
+      "groups": false,
+      "broadcasts": false,
+      "bots": false,
+      "exclude_muted": false,
+      "exclude_read": false,
+      "exclude_archived": false,
+      "emoticon": ""
+    },
+    {
+      "id": 10,
+      "title": "Технологии",
+      "pinned_peers": [],
+      "include_peers": [
+        {
+          "channel_id": 1827472720,
+          "access_hash": "-5721235238565318175"
+        },
+        {
+          "channel_id": 1917625192,
+          "access_hash": "7491082425628916813"
+        },
+        {
+          "channel_id": 1906123412,
+          "access_hash": "-4595414504853754906"
+        },
+        {
+          "channel_id": 1717309630,
+          "access_hash": "-2950045096842416226"
+        },
+        {
+          "channel_id": 1435664162,
+          "access_hash": "6815330270208837572"
+        }
+      ],
+      "exclude_peers": [],
+      "contacts": false,
+      "non_contacts": false,
+      "groups": false,
+      "broadcasts": false,
+      "bots": false,
+      "exclude_muted": false,
+      "exclude_read": false,
+      "exclude_archived": false,
+      "emoticon": ""
+    }
+  ]
+}
