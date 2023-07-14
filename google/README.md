@@ -9,7 +9,36 @@ Before running the code, make sure you have the following prerequisites:
 
 - Python 3.x installed
 - Google API credentials (JSON file) for the respective services
-- Required Python packages installed (see `requirements.txt`)
+- Required Python packages installed. For this, you can use a virtual environment and install dependencies
+  from `requirements.txt`.
+
+## Setting Up the Virtual Environment
+
+1. In your terminal window, navigate to the directory of the project.
+
+2. Initialize a new virtual environment by running:
+
+   ```bash
+   python3 -m venv venv
+   ```
+
+3. Activate the virtual environment. On macOS and Linux, use:
+
+   ```bash
+   source venv/bin/activate
+   ```
+
+   On Windows, use:
+
+   ```bash
+   .\venv\Scripts\activate
+   ```
+
+4. With the virtual environment activated, install the necessary dependencies using:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## Running the script
 
