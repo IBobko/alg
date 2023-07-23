@@ -1,8 +1,10 @@
 import pickle
+
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 
 SCOPES = ['https://www.googleapis.com/auth/contacts',
+          'https://www.googleapis.com/auth/drive.metadata'
           'https://www.googleapis.com/auth/spreadsheets']
 credentials_file = 'credentials.json'
 token_file = 'token.pickle'
