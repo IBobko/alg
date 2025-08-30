@@ -1,5 +1,9 @@
-import tensorflow as tf
+from pathlib import Path
+
 import numpy as np
+import tensorflow as tf
+
+PACKAGE_ROOT = Path(__file__).resolve().parents[1]
 
 # Загружаем набор данных для обучения и тестирования
 (train_images, train_labels), (test_images, test_labels) = tf.keras.datasets.cifar10.load_data()
@@ -30,4 +34,5 @@ model.fit(train_images, train_labels, epochs=10)
 test_loss, test_acc = model.evaluate(test_images, test_labels)
 print('Test accuracy:', test_acc)
 
-model.save('model.h5')
+model_path = PACKAGE_ROOT / "models" / "model.h5"
+model.save(model_path)

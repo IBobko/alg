@@ -1,11 +1,17 @@
-import tensorflow as tf
+from pathlib import Path
+
 import numpy as np
+import tensorflow as tf
+
+PACKAGE_ROOT = Path(__file__).resolve().parents[1]
 
 # Загружаем модель
-model = tf.keras.models.load_model('model.h5')
+model_path = PACKAGE_ROOT / "models" / "model.h5"
+model = tf.keras.models.load_model(model_path)
 
 # Загружаем изображение, которое нужно классифицировать
-img = tf.keras.preprocessing.image.load_img('dog.jpg', target_size=(32, 32))
+image_path = PACKAGE_ROOT / "data" / "dog.jpg"
+img = tf.keras.preprocessing.image.load_img(image_path, target_size=(32, 32))
 img_array = tf.keras.preprocessing.image.img_to_array(img)
 
 # Нормализуем значения пикселей в тензоре
