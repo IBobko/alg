@@ -1,10 +1,7 @@
-import tensorflow as tf
-from tensorflow import keras
-from sklearn.model_selection import train_test_split
-from sklearn.datasets import make_classification
+from ..utils.generate_random_dataset import generate_dataset
 
 # Генерируем случайный набор данных для бинарной классификации
-X, y = make_classification(n_samples=1000, n_features=10, n_classes=2, random_state=42)
+X, y = generate_dataset()
 
 print(X)
 print(y)
