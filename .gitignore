@@ -6,6 +6,8 @@
 
 # Exclude Python virtual environment
 venv/
+**/venv/
+**/.venv/
 myenv/
 __pycache__/
 
